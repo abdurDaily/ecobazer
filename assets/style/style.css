@@ -170,7 +170,7 @@ header .count {
   border-radius: 50%;
   font-weight: bold;
 }
-.mobile_footer span:hover{
+.mobile_footer span:hover {
   background: #00b207;
   color: #fff;
 }
@@ -178,15 +178,18 @@ header .count {
 
 /* =============== MOBILE START ====================*/
 .mobile_search {
-  height: 100vh;
-  background: #fff;
-  position: absolute;
+  position: fixed; /* Changed from absolute */
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 33;
+  height: 100%;
+  z-index: 330;
+  background: #fff;
   visibility: hidden;
+  overflow-y: auto; /* Enables vertical scroll */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
 }
+
 .mobile_search.mobile_search_active {
   visibility: visible;
 }
@@ -314,16 +317,16 @@ nav ul li {
   align-items: center;
   text-transform: capitalize;
 }
-#banner a span{
+#banner a span {
   color: #fff;
   margin-left: 10px;
 }
-#banner .slick-dots{
+#banner .slick-dots {
   display: flex;
   justify-content: center;
   list-style-type: none;
 }
-#banner .slick-dots button{
+#banner .slick-dots button {
   border: none;
   color: transparent;
   margin: 0 2px;
@@ -331,7 +334,74 @@ nav ul li {
   height: 6px;
   border-radius: 50px;
 }
-#banner .slick-active  button{
+#banner .slick-active button {
   background: #00b207;
 }
 /* =============== BANNER END ======================*/
+
+/* =============== BANNER ADD START ====================*/
+#banner_add {
+  padding: 10px 0;
+}
+#banner_add .container {
+  box-shadow: 0 16px 48px 0 rgba(14, 107, 21, 0.08);
+  background: var(--gray-scale-white);
+}
+#banner_add .single_card {
+  background-color: #fff;
+  padding: 20px;
+  outline: 1px solid #dae5da;
+  color: black;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Default active card */
+#banner_add .single_card.active {
+  background-color: #00b207;
+  color: #fff;
+  border-radius: 8px 0 0 8px;
+}
+
+/* On hover, temporary green */
+#banner_add .single_card.add_active {
+  background-color: #00b207;
+  color: #fff;
+}
+
+/* The original active becomes white temporarily */
+#banner_add .single_card.add_secondery_active {
+  background-color: #fff;
+  color: black;
+}
+
+#banner_add .single_card h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 0;
+  margin-top: 16px;
+}
+#banner_add .single_card p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  margin-bottom: 0;
+  padding-top: 8px;
+
+  color: var(--gray-scale-gray---400);
+}
+#banner_add span {
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00b207;
+  outline: 1px solid #00b207;
+}
+/* =============== BANNER ADD END ======================*/

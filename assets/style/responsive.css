@@ -1,11 +1,21 @@
 @media (max-width: 991px) {
-    #banner {
-        text-align: center;
-      }
-      #banner h4 {
-        font-size: 36px;
-      }
-      #banner a{
-          margin-bottom: 20px;
-      }
+  .container {
+    padding: 0 20px;
+  }
+  #banner {
+    text-align: center;
+  }
+  #banner h4 {
+    font-size: 36px;
+  }
+  #banner a {
+    margin-bottom: 20px;
+  }
+
+  #banner_add .single_card:first-child {
+    border-radius: 8px 8px 0 0px;
+  }
+  #banner_add .single_card:last-child {
+    border-radius: 0px 0px 8px 8px;
+  }
 }
