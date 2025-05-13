@@ -405,3 +405,131 @@ nav ul li {
   outline: 1px solid #00b207;
 }
 /* =============== BANNER ADD END ======================*/
+
+/* =============== CSS FILTER START ====================*/
+#filter {
+  padding: 50px 0;
+  height: 100vh;
+}
+#filter .header h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gray-scale-gray-–-900);
+}
+#filter .header button {
+  border: none;
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-scale-gray--500);
+  padding: 0 12px;
+  margin: 25px 0;
+  border-right: 1px solid var(--gren-gray-scale-200);
+}
+#filter .header button:last-child {
+  border-right: none;
+}
+#filter .header button:hover {
+  color: #00b207;
+}
+#filter .filter {
+  border: 1px solid var(--gren-gray-scale-100);
+  padding: 20px;
+  position: relative;
+}
+#filter .filter:hover {
+  box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+  background: var(--gray-scale-white);
+  cursor: pointer;
+}
+#filter .contains h5 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-700);
+  margin-bottom: 0;
+}
+#filter .contains span {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gren-gray-scale-900);
+}
+#filter .contains del {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: line-through;
+  color: var(--gren-gray-scale-400);
+}
+#filter .ratting{
+  margin-top: 14px;
+}
+#filter .ratting span.active{
+  color: #FF8A00;
+}
+#filter .ratting span{
+  color: #CCCCCC;
+}
+#filter .icon span{
+  width: 50px;
+  height: 50px;
+  background-color: #00b207;
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#filter .effect{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+#filter .effect ul{
+  list-style-type: none;
+}
+#filter .effect ul li{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #F2F2F2;
+  border-radius: 50%;
+  line-height: 0;
+  margin-bottom: 10px;
+  color: #002603;
+  transform: translateX(-50px);
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+#filter .effect ul li:last-child{
+  transition-delay: 0.2s;
+}
+#filter .effect ul li:hover{
+  background: #002603;
+  color: #fff;
+}
+ .custom-tooltip {
+  --bs-tooltip-bg: #002603 !important;
+  --bs-tooltip-color: #fff;
+
+}
+
+#filter .filter:hover ul li{
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+/* =============== CSS FILTER END ======================*/

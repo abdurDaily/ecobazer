@@ -38,5 +38,15 @@ $(function () {
       $defaultActive.removeClass("add_secondery_active").addClass("active");
     }
   });
-   // BANNER ADD CARD END
+  // BANNER ADD CARD END
+
+  //  CATEGORY FILTER
+  $(".category-button").categoryFilter();
+  // BOOTSTRAP TOOLTIP
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  );
 });
