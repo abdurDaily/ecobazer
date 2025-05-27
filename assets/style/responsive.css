@@ -18,4 +18,31 @@
   #banner_add .single_card:last-child {
     border-radius: 0px 0px 8px 8px;
   }
+
+  #pera .slider-nav .slick-track {
+    flex-direction: row;
+  }
+
+  .slider-nav img {
+    width: 100%;
+    display: block;
+    padding: 0 0px;
+    /* border: 3px solid greenyellow; */
+  }
+
+  .magnifier {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  #pera .heading {
+    margin-top: 30px;
+  }
+  #pera .heading h4 {
+    font-size: 25px !important;
+  }
+  #pera .add_card .counter {
+    width: 40%;
+  }
+ 
 }

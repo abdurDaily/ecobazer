@@ -409,7 +409,7 @@ nav ul li {
 /* =============== CSS FILTER START ====================*/
 #filter {
   padding: 50px 0;
-  height: 100vh;
+  height: auto;
 }
 #filter .header h4 {
   font-family: var(--font-family);
@@ -470,16 +470,16 @@ nav ul li {
   text-decoration: line-through;
   color: var(--gren-gray-scale-400);
 }
-#filter .ratting{
+#filter .ratting {
   margin-top: 14px;
 }
-#filter .ratting span.active{
-  color: #FF8A00;
+#filter .ratting span.active {
+  color: #ff8a00;
 }
-#filter .ratting span{
-  color: #CCCCCC;
+#filter .ratting span {
+  color: #cccccc;
 }
-#filter .icon span{
+#filter .icon span {
   width: 50px;
   height: 50px;
   background-color: #00b207;
@@ -490,21 +490,21 @@ nav ul li {
   align-items: center;
   justify-content: center;
 }
-#filter .effect{
+#filter .effect {
   position: absolute;
   right: 30px;
   top: 30px;
 }
-#filter .effect ul{
+#filter .effect ul {
   list-style-type: none;
 }
-#filter .effect ul li{
+#filter .effect ul li {
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
   border-radius: 50%;
   line-height: 0;
   margin-bottom: 10px;
@@ -514,22 +514,194 @@ nav ul li {
   visibility: hidden;
   opacity: 0;
 }
-#filter .effect ul li:last-child{
+#filter .effect ul li:last-child {
   transition-delay: 0.2s;
 }
-#filter .effect ul li:hover{
+#filter .effect ul li:hover {
   background: #002603;
   color: #fff;
 }
- .custom-tooltip {
+.custom-tooltip {
   --bs-tooltip-bg: #002603 !important;
   --bs-tooltip-color: #fff;
-
 }
 
-#filter .filter:hover ul li{
+#filter .filter:hover ul li {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
 }
 /* =============== CSS FILTER END ======================*/
+#pera .slider-nav img {
+  width: 100px !important;
+}
+#pera .slider-nav .slick-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#pera .slider-nav {
+  position: relative;
+}
+#pera .prev {
+  /* background-color: red; */
+  color: #999999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  left: 38px;
+  top: -40px;
+  z-index: 11;
+}
+#pera .next {
+  /* background-color: red; */
+  color: #999999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+  position: absolute;
+  left: 38px;
+  bottom: -40px;
+  z-index: 11;
+}
+
+#pera .slider-nav .slick-current img {
+  width: 100%;
+  border: 1px solid #00b207;
+}
+
+#pera {
+  padding-bottom: 150px !important;
+}
+#pera .details .heading h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  color: var(--gray-scale-gray---900);
+}
+#pera .details .heading span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--branding-success-dark);
+  background: rgba(32, 181, 38, 0.2);
+  display: inline-block;
+  height: 100%;
+  padding: 4px 8px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+#pera .price {
+  display: flex;
+  align-items: center;
+}
+
+#pera .price del {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+#pera .price .current_price {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--branding-success-dark);
+}
+#pera .price .offer {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--branding-error);
+  display: inline-block;
+  padding: 3px 10px;
+  background: rgba(234, 75, 72, 0.1);
+  border-radius: 30px;
+}
+#pera .add_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  /* background: #777; */
+}
+#pera .add_card .counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  padding: 5px;
+  width: 25%;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+}
+#pera .add_card .counter button {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: #1a1a1a;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--gray-scale-gray-–-900);
+  border-radius: 50%;
+}
+#pera .add_card .counter input {
+  border: none;
+  width: 80%;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--gray-scale-gray---900);
+}
+#pera .cart_btn {
+  width: 60%;
+}
+#pera .cart_btn a {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--gray-scale-white);
+  background-color: #00b207;
+  width: 100%;
+  padding: 16px;
+  border-radius: 43px;
+}
+#pera .cart_btn a span {
+  margin-left: 10px;
+}
+
+#pera .heart {
+  background: rgba(32, 181, 38, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
