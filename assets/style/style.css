@@ -705,3 +705,13 @@ nav ul li {
   height: 43px;
   border-radius: 50%;
 }
+#pera .details{
+  padding: 15px 0 0 0;
+}
+#pera .details p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-scale-gray-–-500);
+}
