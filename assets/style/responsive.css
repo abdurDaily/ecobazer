@@ -44,5 +44,29 @@
   #pera .add_card .counter {
     width: 40%;
   }
- 
+
+  #counter {
+    background: var(--gren-gray-scale-50);
+    padding: 40px 0;
+  }
+  #counter .heading h4 {
+    font-size: 24px;
+  }
+  #counter .count_timer li{
+    padding: 0 10px;
+  }
+  #counter .count_timer li:first-child{
+    margin-left: -20px;
+  }
+
+
+  #video {
+    margin: 20px 0;
+  }
+  #video .container{
+    padding: 0;
+  }
+  #video .container p,  #video .container h4 {
+    display: none;
+  }
 }

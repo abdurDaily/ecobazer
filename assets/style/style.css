@@ -705,7 +705,7 @@ nav ul li {
   height: 43px;
   border-radius: 50%;
 }
-#pera .details{
+#pera .details {
   padding: 15px 0 0 0;
 }
 #pera .details p {
@@ -715,3 +715,115 @@ nav ul li {
   line-height: 150%;
   color: var(--gray-scale-gray-–-500);
 }
+
+/* =============== COUNTER START ====================*/
+#counter {
+  background-image: url("../images/counter/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: var(--gren-gray-scale-50); */
+  padding: 50px 0;
+}
+#counter .count_timer {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+#counter .heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--branding-success);
+}
+#counter .heading h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gren-gray-scale-900);
+}
+#counter .count_timer li {
+  background: #fff;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+#counter .count_timer li p {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--gren-gray-scale-500);
+}
+#counter .count_timer li span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--branding-success);
+}
+/* =============== COUNTER END ======================*/
+
+/* =============== VIDEO START ====================*/
+#video {
+  /* padding: 30px; */
+  background-color: #edf2ee;
+  background-color: #297238;
+  padding-bottom: 300px;
+}
+#video .container {
+  position: relative;
+}
+#video .card_details p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--gren-gray-scale-600);
+}
+#video .card_content {
+  border: 1px solid var(--gray-scale-gray---100);
+
+}
+#video .heading {
+  margin: 100px 0 45px 0;
+}
+#video .heading h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+color: var(--gren-gray-scale-900);
+  text-align: center;
+}
+#video .info {
+  position: absolute;
+  width: 100%;
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 110%;
+}
+#video .info a {
+  display: inline-block;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+}
+/* =============== VIDEO END ======================*/

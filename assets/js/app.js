@@ -127,8 +127,24 @@ $(function () {
     } else {
       $(".inc").css({
         cursor: "not-allowed",
-        
       });
     }
+  });
+
+  //*COUNTDOWN
+  const countdownDate = $(".count_timer").attr("data-time"); // or .attr("data-time")
+
+  $(".count_timer").countdown(
+    {
+      date: countdownDate,
+    },
+    function () {
+      alert("Merry Christmas!");
+    }
+  );
+
+  //*VENOBOX
+  $(".venobox").venobox({
+    // settings here
   });
 });
